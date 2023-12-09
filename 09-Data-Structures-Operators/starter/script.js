@@ -27,3 +27,24 @@ const restaurant = {
     },
   },
 };
+
+//const {name:namaRestaurant,menu:menu=[],starterMenu:starter=[]}=restaurant;
+//console.log(namaRestaurant,menu,starter);
+
+const{name,openingHours,categories}=restaurant;
+
+let a=111;
+let b=23232;
+const obj={a:11,b:7,c:10};
+({a,b}=obj);
+//console.log(a,b);
+
+const{fri}=openingHours;
+//console.log(fri);
+
+
+const menuBaru=[...restaurant.mainMenu,'Gnocci'];
+//console.log(menuBaru);
+const menuPembuka=[...restaurant.starterMenu];
+const menu=[...menuBaru,...menuPembuka];
+console.log(menu);
